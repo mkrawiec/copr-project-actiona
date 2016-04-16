@@ -44,8 +44,12 @@ developing applications that use %{name}.
 
 %build
 %{_qt5_qmake} actiona.pro \
-    PREFIX=%{_prefix} LIBDIR=%{_lib} \
-    lupdate=lupdate-qt5 lrelease=lrelease-qt5
+    "CONFIG += release force_debug_info" \
+    PREFIX=%{_prefix} \
+    LIBDIR=%{_lib} \
+    lupdate=lupdate-qt5 \
+    lrelease=lrelease-qt5
+
 make %{?_smp_mflags} locale_release
 
 
