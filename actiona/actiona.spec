@@ -1,7 +1,7 @@
 Name:       actiona
 Summary:    Cross-platform automation tool
 License:    GPLv3
-Version: 3.9.1
+Version: 3.9.2
 Release:    1%{?dist}
 Url:        https://actiona.tools
 Source0:    %{name}-%{version}.tar.gz
